@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.adapter.ProdutoDetalheActivity">
+
+    <ImageView
+        android:id="@+id/imgProduto"
+        android:layout_width="159dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/grouth_whey_protein"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvMenu" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="369dp"
+        android:layout_height="31dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Whey protein"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduto" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMenu"
+        android:layout_width="407dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/azulzim01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgVoltar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_voltar_white"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDetalhesProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhes do produto"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgVoltar" />
+
+    <TextView
+        android:id="@+id/lblDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18dp"
+        android:text="Desçrição"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Peso\\Qtd"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricao" />
+
+    <TextView
+        android:id="@+id/lblPreco"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Preço"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <TextView
+        android:id="@+id/lblMarca"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Marca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreco" />
+
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:textSize="16dp"
+        android:layout_width="366dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:text="Whey protein Growth fornece proteínas para quem deseja hipertrofia e definição muscular."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescricao" />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="369dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:text="1 Kg"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPeso" />
+
+    <TextView
+        android:id="@+id/txtPreco"
+        android:layout_width="369dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:text="R$ 99,00"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPreco" />
+
+    <TextView
+        android:id="@+id/txtMarca"
+        android:layout_width="369dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16dp"
+        android:text="Growth Suplementos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMarca" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="390dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
