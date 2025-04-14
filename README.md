@@ -7,4 +7,5 @@ Criar uma app com duas telas: Lista Customizada (recyclerView) e Detalhes do Pro
 Plus: Implemente uma SplashScreen (Documentação do Android)
 
 # Resultado:
+![image](https://github.com/user-attachments/assets/5eebbc8e-b548-4147-ad91-140c9a2f4c41)
 
